@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Prevent Text Selection on Buttons */
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Improved Focus States */
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #6B46C1;
+  outline-offset: 2px;
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Improved Touch Targets */
+@media (max-width: 640px) {
+  button, 
+  input,
+  select {
+    min-height: 44px;
+  }
+}
+
+/* Safe Area Handling */
+@supports (padding: max(0px)) {
+  .safe-bottom {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+  
+  .safe-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+}
+
+/* Prevent Image Drag */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Smooth Transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Better Mobile Buttons */
+@media (hover: none) {
+  button:active {
+    transform: scale(0.98);
+  }
+}

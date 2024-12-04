@@ -1,0 +1,215 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.logo-wrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.top-nav {
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-tab {
+  border: none;
+  background: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #666;
+}
+
+.nav-tab.active {
+  color: #6200ee;
+  border-bottom: 2px solid #6200ee;
+}
+
+.main-content {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.left-panel {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.right-panel {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-state p {
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  color: #666;
+}
+
+.generate-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #6200ee;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.preview-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-controls select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Switch toggle styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #6200ee;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.instagram-preview {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview-content {
+  aspect-ratio: 9/16;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.brand-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f3f3f3, #e0e0e0);
+}
+
+.brand-name {
+  font-weight: 500;
+}
+
+.sponsored-tag {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.preview-footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.get-offer-button {
+  padding: 0.5rem 2rem;
+  background: #6200ee;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
