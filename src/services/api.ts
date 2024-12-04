@@ -149,8 +149,8 @@ export const captionService = {
     try {
       // Here you'll add the Gemini API integration
       // For now, returning mock data based on brand context
-      const prompt = `Generate 4 engaging social media captions for ${brandContext}. 
-        Include emojis and make them attention-grabbing.`
+      // const prompt = `Generate 4 engaging social media captions for ${brandContext}. 
+      //   Include emojis and make them attention-grabbing.`
       
       // Mock response for now
       return [

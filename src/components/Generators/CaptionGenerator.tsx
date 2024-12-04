@@ -3,6 +3,7 @@ import { SkeletonText } from '../UI/Skeleton'
 
 interface CaptionGeneratorProps {
   onCaptionSelect: (caption: string) => void;
+  brandName : string
 }
 
 export default function CaptionGenerator({ onCaptionSelect }: CaptionGeneratorProps) {

@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react'
-import { useDropzone } from 'react-dropzone'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React from 'react'
 
 interface ImageUploaderProps {
   onUpload: (file: File) => void;

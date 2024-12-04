@@ -6,6 +6,7 @@ import { Background } from '../../types'
 
 interface VisualsGeneratorProps {
   onImageProcess: (image: { original: string, processed: string }) => void;
+  isMobilePreview : boolean
 }
 
 export default function VisualsGenerator({ onImageProcess }: VisualsGeneratorProps) {
