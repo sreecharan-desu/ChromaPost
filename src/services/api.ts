@@ -5,6 +5,9 @@ const REMOVEBG_API_KEY = import.meta.env.VITE_REMOVEBG_API_KEY
 const UNSPLASH_API_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY
 const PIXABAY_API_KEY = import.meta.env.VITE_PIXABAY_API_KEY
 
+/**
+ * imageService utility.
+ */
 export const imageService = {
   async removeBackground(imageUrl: string): Promise<string> {
     try {
