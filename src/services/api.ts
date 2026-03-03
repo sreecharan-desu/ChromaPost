@@ -89,6 +89,9 @@ export const imageService = {
   }
 }
 
+/**
+ * backgroundService utility.
+ */
 export const backgroundService = {
   async getRandomBackgrounds(query: string = 'background texture'): Promise<Background[]> {
     try {
