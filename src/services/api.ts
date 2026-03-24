@@ -150,6 +150,9 @@ export const backgroundService = {
   }
 }
 
+/**
+ * captionService utility.
+ */
 export const captionService = {
   async generateCaptions(brandContext: string): Promise<string[]> {
     try {
