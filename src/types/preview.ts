@@ -7,6 +7,9 @@ export type PreviewLayout = {
   type: 'Story' | 'Post' | 'Reel';
 }
 
+/**
+ * PREVIEW_LAYOUTS utility.
+ */
 export const PREVIEW_LAYOUTS: PreviewLayout[] = [
   {
     id: 'instagram-story',
