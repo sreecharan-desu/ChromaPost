@@ -359,10 +359,10 @@ export const captionService = {
 
       // Mock response for now
       return [
-        `✨ ${brandContext} - Leading the way in innovation`,
-        `🚀 Experience the difference with ${brandContext}`,
-        `💫 ${brandContext} - Where quality meets excellence`,
-        `🎯 Choose ${brandContext} for unmatched quality`
+        `${brandContext} - Leading the way in innovation`,
+        `Experience the difference with ${brandContext}`,
+        `${brandContext} - Where quality meets excellence`,
+        `Choose ${brandContext} for unmatched quality`
       ]
     } catch (error) {
       console.error('Error generating captions:', error)
